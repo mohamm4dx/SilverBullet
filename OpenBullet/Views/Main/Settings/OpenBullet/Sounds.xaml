@@ -10,12 +10,12 @@
 
     <Grid>
         <StackPanel Margin="5">
-            <CheckBox Content="Enable" IsChecked="{Binding EnableSounds}" VerticalAlignment="Center" VerticalContentAlignment="Center" />
-            <Label Content="On-Hit Sound"/>
+            <CheckBox Content="Activar" IsChecked="{Binding EnableSounds}" VerticalAlignment="Center" VerticalContentAlignment="Center" />
+            <Label Content="Sonido del hit"/>
             <TextBox Text="{Binding OnHitSound}" />
-            <Label Content="On-Reload Sound"/>
+            <Label Content="Sonido de recarga"/>
             <TextBox Text="{Binding OnReloadSound}" />
-            <Label Content="NOTE: Custom sounds must be placed in the Sounds subdirectory and have a .wav extension!" Foreground="{DynamicResource ForegroundCustom}"/>
+            <Label Content="NOTA: Los sonidos personalizados deben colocarse en el subdirectorio Sonidos y tener una extensión .wav" Foreground="{DynamicResource ForegroundCustom}"/>
         </StackPanel>
     </Grid>
 </Page>

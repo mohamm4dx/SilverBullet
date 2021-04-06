@@ -65,7 +65,7 @@ namespace OpenBullet
 
             InitializeComponent();
 
-            var title = $"SilverBullet {SB.Version}";
+            var title = $"🅾🅿🅴🅽 🅱🆄🅻🅻🅴🆃 {SB.Version}";
             Title = title;
             titleLabel.Content = title;
 
@@ -738,6 +738,11 @@ namespace OpenBullet
         private void ResizeWindow(ResizeDirection direction)
         {
             SendMessage(_hwndSource.Handle, 0x112, (IntPtr)(61440 + direction), IntPtr.Zero);
+        }
+
+        private void Main_Navigated(object sender, System.Windows.Navigation.NavigationEventArgs e)
+        {
+
         }
 
         private enum ResizeDirection

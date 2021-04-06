@@ -79,7 +79,7 @@
                     x:Name="TitleLabel"
                     Margin="-7,0,0,0"
                     VerticalAlignment="Center"
-                    Content="Title"
+                    Content="Titulo"
                     FontFamily="pack://application:,,,/Fonts/#Century Gothic"
                     FontSize="14"
                     Foreground="White"
@@ -142,7 +142,7 @@
                     HorizontalAlignment="Left"
                     FontSize="15.5"
                     Foreground="{DynamicResource ForegroundMain}"
-                    Text="Message"
+                    Text="Mensaje"
                     TextWrapping="Wrap" />
             </ScrollViewer>
             <iconPacks:PackIconMaterial
@@ -169,14 +169,14 @@
                     Background="{DynamicResource BackgroundMain}"
                     BorderBrush="#FF00AADE"
                     Click="BtnOk_Click"
-                    Content="Ok" />
+                    Content="Acepta" />
                 <Button
                     x:Name="BtnCancel"
                     Width="111"
                     Background="#FF2C2C2C"
                     BorderBrush="#FFD0284C"
                     Click="BtnCancel_Click"
-                    Content="Cancel" />
+                    Content="Cancela" />
             </StackPanel>
             <Button
                 Grid.Row="1"

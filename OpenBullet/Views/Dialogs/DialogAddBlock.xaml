@@ -29,10 +29,10 @@
         <StackPanel
             Grid.Row="0"
             Orientation="Horizontal">
-            <Label Content="Current set:" />
+            <Label Content="Conjunto actual:" />
             <Label
                 x:Name="defaultSetLabel"
-                Content="Default"
+                Content="Defecto"
                 FontWeight="Bold"
                 MouseDown="defaultSetLabel_MouseDown" />
             <Label

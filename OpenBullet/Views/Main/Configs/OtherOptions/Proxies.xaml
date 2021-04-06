@@ -18,16 +18,16 @@
 
         <StackPanel>
             <StackPanel Grid.Column="0" Margin="5">
-                <CheckBox Content="Needs Proxies" IsChecked="{Binding NeedsProxies}" VerticalContentAlignment="Center"/>
-                <CheckBox Content="Use Only Socks Proxies" IsChecked="{Binding OnlySocks}" VerticalContentAlignment="Center"/>
-                <CheckBox Content="Use Only SSL Proxies" IsChecked="{Binding OnlySsl}" VerticalContentAlignment="Center"/>
+                <CheckBox Content="Necesita Proxies" IsChecked="{Binding NeedsProxies}" VerticalContentAlignment="Center"/>
+                <CheckBox Content="Use solo Socks Proxies" IsChecked="{Binding OnlySocks}" VerticalContentAlignment="Center"/>
+                <CheckBox Content="Use solo SSL Proxies" IsChecked="{Binding OnlySsl}" VerticalContentAlignment="Center"/>
                 <DockPanel>
-                    <Label Content="Max Uses Per Proxy (0 = infinite)" />
+                    <Label Content="Usos por proxy (0 = infinito)" />
                     <xctk:IntegerUpDown Background="Transparent" Width="50" Margin="10 0 0 0" Value="{Binding MaxProxyUses}" Foreground="{DynamicResource ForegroundMain}" HorizontalAlignment="Right"/>
                 </DockPanel>
-                <CheckBox Content="Ban Proxy after Good Status" IsChecked="{Binding BanProxyAfterGoodStatus}" VerticalContentAlignment="Center" ToolTip="Bans a Proxy after a SUCCESS, CUSTOM or TOCHECK result."/>
+                <CheckBox Content="Prohibir proxy " IsChecked="{Binding BanProxyAfterGoodStatus}" VerticalContentAlignment="Center" ToolTip="Bans a Proxy after a SUCCESS, CUSTOM or TOCHECK result."/>
                 <DockPanel>
-                    <Label Content="Ban Loop Evasion (-1 = default)" />
+                    <Label Content="Ban Evasion (-1=predeterminado)" />
                     <xctk:IntegerUpDown Background="Transparent" Width="50" Margin="10 0 0 0" Minimum="-1" Value="{Binding BanLoopEvasionOverride}" Foreground="{DynamicResource ForegroundMain}" HorizontalAlignment="Right"/>
                 </DockPanel>
             </StackPanel>

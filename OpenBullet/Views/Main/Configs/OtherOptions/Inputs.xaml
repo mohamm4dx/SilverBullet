@@ -15,8 +15,8 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Orientation="Horizontal">
-            <Button x:Name="addInputButton" Content="Add Input" Click="addInputButton_Click"/>
-            <Button x:Name="clearInputsButton" Content="Clear Inputs" Click="clearInputsButton_Click"/>
+            <Button x:Name="addInputButton" Content="Añadir aporte" Click="addInputButton_Click"/>
+            <Button x:Name="clearInputsButton" Content="Borrar aporte" Click="clearInputsButton_Click"/>
         </StackPanel>
 
         <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">

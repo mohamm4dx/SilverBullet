@@ -8,8 +8,8 @@
       Title="DialogCustomInput">
 
     <StackPanel Height="100" Width="490" Margin="5">
-        <TextBox x:Name="questionTextbox" Text="PLACEHOLDER" BorderThickness="0" Background="Transparent" IsReadOnly="True"/>
+        <TextBox x:Name="questionTextbox" Text="marcador de posicion" BorderThickness="0" Background="Transparent" IsReadOnly="True"/>
         <TextBox x:Name="answerTextbox" KeyDown="answerTextbox_KeyDown" />
-        <Button x:Name="acceptButton" Content="ACCEPT" Click="acceptButton_Click" Margin="0 5 0 0"/>
+        <Button x:Name="acceptButton" Content="ACEPTAR" Click="acceptButton_Click" Margin="0 5 0 0"/>
     </StackPanel>
 </Page>

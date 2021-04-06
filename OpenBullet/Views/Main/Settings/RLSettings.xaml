@@ -134,7 +134,7 @@
                         <TextBlock
                             Margin="5,0"
                             VerticalAlignment="Center">
-                            SAVE
+                            Guadar
                         </TextBlock>
                     </StackPanel>
                 </Button>
@@ -152,7 +152,7 @@
                         <TextBlock
                             Margin="5,0"
                             VerticalAlignment="Center">
-                            RESET
+                            Resetea
                         </TextBlock>
                     </StackPanel>
                 </Button>

@@ -21,13 +21,13 @@
             Margin="5">
             <DockPanel>
                 <Label
-                    Content="Mask"
+                    Content="Maskara"
                     DockPanel.Dock="Top" />
                 <TextBox
                     DockPanel.Dock="Top"
                     Text="{Binding Mask, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
                 <Label
-                    Content="Allowed Characters"
+                    Content="Caracteres permitidos"
                     DockPanel.Dock="Top" />
                 <TextBox
                     DockPanel.Dock="Top"
@@ -38,40 +38,40 @@
                     <Button
                         x:Name="clearButton"
                         Click="clearButton_Click"
-                        Content="Clear" />
+                        Content="Limpiar" />
                     <Button
                         x:Name="digitsButton"
                         Click="digitsButton_Click"
-                        Content="Digits" />
+                        Content="Digitos" />
                     <Button
                         x:Name="lowercaseButton"
                         Click="lowercaseButton_Click"
-                        Content="Lowercase" />
+                        Content="Mayusculas" />
                     <Button
                         x:Name="uppercaseButton"
                         Click="uppercaseButton_Click"
-                        Content="Uppercase" />
+                        Content="Minusculas" />
                 </StackPanel>
                 <CheckBox
                     VerticalContentAlignment="Center"
-                    Content="Only output Luhn-valid numbers"
+                    Content="Salida solo numeros"
                     DockPanel.Dock="Top"
                     IsChecked="{Binding OnlyLuhn}" />
                 <CheckBox
                     VerticalContentAlignment="Center"
-                    Content="Automatically Add to Wordlist Manager"
+                    Content="Agregar automaticamente al Administrador"
                     DockPanel.Dock="Top"
                     IsChecked="{Binding AutoImport}" />
                 <StackPanel
                     DockPanel.Dock="Top"
                     Orientation="Horizontal">
-                    <Label Content="Expected Number of Lines: " />
+                    <Label Content="Numero esperado de lineas:" />
                     <Label Content="{Binding OutputLines}" />
                 </StackPanel>
                 <StackPanel
                     DockPanel.Dock="Top"
                     Orientation="Horizontal">
-                    <Label Content="Expected FileSize: " />
+                    <Label Content="Tamaño de archivo esperado:" />
                     <Label Content="{Binding OutputSize}" />
                 </StackPanel>
 
@@ -88,7 +88,7 @@
                         <TextBlock
                             Margin="5,0"
                             VerticalAlignment="Center">
-                            Generate
+                            Generar
                         </TextBlock>
                     </StackPanel>
                 </Button>

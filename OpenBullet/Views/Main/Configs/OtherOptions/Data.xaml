@@ -17,16 +17,16 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0">
-            <Label Content="Allowed Wordlist Types" FontWeight="Bold"/>
+            <Label Content="palabras permitidas" FontWeight="Bold"/>
             <ComboBox DockPanel.Dock="Top" x:Name="allowedWordlist1Combobox" SelectionChanged="allowedWordlist1Combobox_SelectionChanged" />
             <ComboBox DockPanel.Dock="Top" x:Name="allowedWordlist2Combobox" SelectionChanged="allowedWordlist2Combobox_SelectionChanged" />
-            <CheckBox IsChecked="{Binding EncodeData}" Content="URLencode Data after Slicing" VerticalContentAlignment="Center"/>
+            <CheckBox IsChecked="{Binding EncodeData}" Content="Datos de URLencode" VerticalContentAlignment="Center"/>
         </StackPanel>
 
         <StackPanel Grid.Row="1" Orientation="Horizontal">
-            <Label Grid.Row="1" Content="Rules:" FontWeight="Bold"/>
-            <Button x:Name="addRuleButton" Content="Add Rule" Click="addRuleButton_Click"/>
-            <Button x:Name="clearRulesButton" Content="Clear Rules" Click="clearRulesButton_Click"/>
+            <Label Grid.Row="1" Content="Reglas:" FontWeight="Bold"/>
+            <Button x:Name="addRuleButton" Content="Añadir regla" Click="addRuleButton_Click"/>
+            <Button x:Name="clearRulesButton" Content="Borra regla" Click="clearRulesButton_Click"/>
         </StackPanel>
 
         <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="2">

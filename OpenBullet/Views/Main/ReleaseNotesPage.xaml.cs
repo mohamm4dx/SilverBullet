@@ -13,57 +13,57 @@ namespace OpenBullet.Views.Main
             InitializeComponent();
             DataContext = this;
             AppendNote(new[] {
-                "Added usage (runner)",
-                "Added new hashing algorithms (by its5Q)",
-                "Added encoding (function)",
-                "Added auto save config on stacker",
-                "Added open log in notepad",
-                "Fixed bugs",
+                "Uso agregado (corredor)",
+                "Se agregaron nuevos algoritmos de hash (por its5Q)",
+                "Codificación agregada (función)",
+                "Se agregó la configuración de guardado automático en el apilador",
+                "Se agregó un registro abierto en el bloc de notas",
+                "Errores arreglados",
             });
             AppendNote(new[] {
-            "Added websocket block (ws)",
-            "Added send text message to telegram in utility block",
-            "Added set selenium user agent in browser action block",
-            "Fixed and updated js executor" ,
-            "Fixed color thresh and sharpen filters (ocr)"});
+            "Bloque websocket agregado (ws)",
+            "Agregado enviar mensaje de texto a telegrama en el bloque de servicios públicos",
+            "Se agregó el agente de usuario de set selenium en el bloque de acciones del navegador",
+            "Ejecutor js fijo y actualizado",
+            "Filtros de nitidez y trilla de color fijos (ocr)"});
             AppendNote(new[] {
-               "Supported drag drop wordlist,proxy,config",
-               "Fixed maximum mainwindow",
-               "Fixed load loliX config",
-               "Added input box for bots",
-               "Added Analyze login page (block request)",
-               "Updated wordlist tools",
+               "Combos, proxy, configuración de arrastrar y soltar admitidos",
+               "Ventana principal máxima fija",
+               "Configuración loliX de carga fija",
+               "Cuadro de entrada agregado para bots",
+               "Se agregó la página de inicio de sesión Analizar (solicitud de bloqueo)",
+               "Herramientas de Combos actualizadas",
             });
             AppendNote(new[] {
-                "Bugs fixed",
-                "Supported format loli,loliX,anom",
-                "Added find and replace dialog in LoliScript editor",
-                "Added OCR",
-                "Added set variable in (OCR)",
-                "Added image processing (with OpenCv and without OpenCv)",
-                "Added mathematical string evaluation (function)",
-                "Added date to solar in function block",
-                "Added date(solar) to gregorian (function)",
-                "Added get remaining day (function)",
-                "Added get current year,month,day,hour (function)",
-                "Added input to digits,letter,letterOrdigits (function)",
-                "Added remove string in function block",
-                "Added num to words (en) (function)",
-                "Added words to num (en) (function)",
-                "Added subwordlist",
-                "Added multiple wordlist",
-                "Added disable automation in selenium (settings)",
-                "Added new icons and updated previous icons",
-                "Added generate randomUA android and ios (function)",
-                "Added editable custom (key check)",
-                "Added show all custom types by hovering the mouse over the custom label",
-                "Added refresh in select config (runner)",
-                "Added tessdata downloader (tools)",
-                "Added supporters (tab)",
-                "Supported random num generation up to 18 digits (function)",
-                "Updated browser (html view) to CefSharp (chromium-based browser) (stacker)",
-                "Updated log in debugger (stacker)",
-                "Updated select list (runner)",
+                "Errores corregidos",
+                "Formato compatible loli, loliX, anom",
+                "Se agregó un cuadro de diálogo de búsqueda y reemplazo en el editor de LoliScript",
+                "OCR agregado",
+                "Variable de conjunto agregada en (OCR)",
+                "Procesamiento de imágenes agregado (con OpenCv y sin OpenCv)",
+                "Se agregó (función) evaluación de cadena matemática",
+                "Fecha agregada a solar en bloque de funciones",
+                "Fecha agregada (solar) a gregoriana (función)",
+                "Se agregó obtener el día restante (función)",
+                "Se agregó obtener año, mes, día, hora (función) actual",
+                "Añadida entrada a dígitos, letras, letrasOrdigits (función)",
+                "Se agregó eliminar cadena en el bloque de funciones",
+                "Número agregado a palabras (en) (función)",
+                "Palabras agregadas a num (en) (función)",
+                "Lista de subpalabras agregada",
+                "Lista de palabras múltiples agregadas",
+                "Añadida desactivación de la automatización en selenio (configuración)",
+                "Se agregaron nuevos íconos y se actualizaron los íconos anteriores",
+                "Se agregó generar android e ios (función) randomUA",
+                "Añadido personalizado editable (comprobación de clave)",
+                "Se agregó mostrar todos los tipos personalizados al pasar el mouse sobre la etiqueta personalizada",
+                "Actualización agregada en la configuración seleccionada (corredor)",
+                "Se agregó el descargador de tessdata (herramientas)",
+                "Partidarios agregados (pestaña)",
+                "Se admite la generación de números aleatorios de hasta 18 dígitos (función)",
+                "Navegador actualizado (vista html) a CefSharp (navegador basado en cromo) (apilador)",
+                "Actualizado depurador de inicio de sesión (apilador)",
+                "Lista de selección actualizada (corredor)",
             });
         }
 
@@ -78,11 +78,11 @@ namespace OpenBullet.Views.Main
                 paragraph.Inlines.Add(new Run(note));
                 richTextBox.Document.Blocks.Add(paragraph);
             }
-            var endPar = new Paragraph(new Bold(new Run("========================")));
+            var endPar = new Paragraph(new Bold(new Run("━━━━━━━━━━━━━━━━━━━━━━━━━")));
             endPar.SetResourceReference(Paragraph.ForegroundProperty, "ForegroundMain");
             richTextBox.Document.Blocks.Add(endPar);
         }
 
-        public string App => $"Silver Bullet {SB.Version}";
+        public string App => $"🅾🅿🅴🅽🅱🆄🅻🅻🅴🆃 🅶🅴🆅🅴🆁  {SB.Version}";
     }
 }

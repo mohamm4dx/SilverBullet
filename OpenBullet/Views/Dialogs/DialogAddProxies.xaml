@@ -21,16 +21,16 @@
         <StackPanel
             Grid.Row="0"
             Orientation="Horizontal">
-            <Label Content="Import from:" />
+            <Label Content="Import desde:" />
             <Label
                 x:Name="fileMode"
-                Content="File"
+                Content="Arxivo"
                 FontWeight="Bold"
                 Foreground="{DynamicResource ForegroundMenuSelected}"
                 MouseDown="FileMode_MouseDown" />
             <Label
                 x:Name="pasteMode"
-                Content="Paste"
+                Content="Pegar"
                 FontWeight="Bold"
                 MouseDown="PasteMode_MouseDown" />
             <Label
@@ -182,28 +182,28 @@
                 <Span
                     FontWeight="Bold"
                     Foreground="{DynamicResource ForegroundMain}">
-                    Advanced Syntax:
+                    Mete tus Proxys:
                 </Span>
                 <LineBreak />
-                <Span Foreground="{DynamicResource ForegroundMain}">Type: (http)1.1.1.1:80</Span>
+                <Span Foreground="{DynamicResource ForegroundMain}">Elije el tipo</Span>
                 <LineBreak />
                 <Span Foreground="{DynamicResource ForegroundMain}">Auth: 1.1.1.1:80:username:password</Span>
                 <LineBreak />
                 <Span Foreground="{DynamicResource ForegroundMain}">Chain: 1.1.1.1:80 -&gt; 2.2.2.2:80</Span>
                 <LineBreak />
-                <Span Foreground="{DynamicResource ForegroundCustom}">Auth and Chain won't work with Selenium</Span>
+                <Span Foreground="{DynamicResource ForegroundCustom}">TIP:No todas andan con mismos proxys</Span>
             </TextBlock>
 
             <Label
                 Grid.Row="1"
                 Grid.ColumnSpan="2"
-                Content="Defaults (when not specified):" />
+                Content="Valores predeterminados" />
 
             <Label
                 Grid.Row="2"
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Content="Type:" />
+                Content="Tipo:" />
             <ComboBox
                 x:Name="proxyTypeCombobox"
                 Grid.Row="2"
@@ -213,7 +213,7 @@
             <Label
                 Grid.Row="3"
                 Grid.Column="0"
-                Content="Username:" />
+                Content="Usuario:" />
             <TextBox
                 x:Name="usernameTextbox"
                 Grid.Row="3"
@@ -223,7 +223,7 @@
             <Label
                 Grid.Row="4"
                 Grid.Column="0"
-                Content="Password:" />
+                Content="Contraseña:" />
             <TextBox
                 x:Name="passwordTextbox"
                 Grid.Row="4"
@@ -236,7 +236,7 @@
                 Grid.ColumnSpan="2"
                 Margin="5"
                 Click="acceptButton_Click"
-                Content="ACCEPT" />
+                Content="ACEPTAR" />
         </Grid>
     </Grid>
 

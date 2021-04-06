@@ -13,13 +13,11 @@
     <ScrollViewer Margin="4,10,0,0">
         <Grid>
             <Label
-                Name="waitingLabel"
+                x:Name="waitingLabel"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 FontSize="26"
-                FontWeight="Bold">
-                Waiting...
-            </Label>
+                FontWeight="Bold" Content="Espera..."/>
             <WrapPanel Name="wrapPanel" />
         </Grid>
     </ScrollViewer>

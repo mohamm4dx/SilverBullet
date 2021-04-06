@@ -1,5 +1,5 @@
 <SyntaxDefinition name="LoliScript"
-        xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+        xmlns="https://github.com/g3v3r">
     <Color name="Comment" foreground="LightGray" />
     <Color name="string" foreground="LightBlue" />
 

@@ -11,11 +11,11 @@
     <Grid>
         <StackPanel Grid.Column="0" Margin="5">
             <Image x:Name="quitImage" Source="/Images/Icons/quit.png" Width="15" Height="15" HorizontalAlignment="Right" Margin="3" MouseDown="quitImage_MouseDown"/>
-            <Label Content="TERMS OF USE" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <Label Content="TERMINOS DE USO" HorizontalAlignment="Center" FontWeight="Bold"/>
 
             <TextBlock Foreground="{DynamicResource ForegroundMain}" TextWrapping="WrapWithOverflow" TextAlignment="Center" 
-                       Text="This software is provided 'as is' without warranties of any kind. The developer will not be held responsible for any illegal or improper use of the program. " HorizontalAlignment="Center" FontSize="11" Margin="0 0 0 0" />
-            <Button x:Name="agreeButton" Content="I AGREE" Click="agreeButton_Click" Margin="0 10 0 0"/>
+                       Text="Este software se proporciona &quot;tal cual&quot; sin garantías de ningún tipo. El desarrollador no se hace responsable de ningún uso ilegal o inadecuado del programa." HorizontalAlignment="Center" FontSize="11" Margin="0 0 0 0" />
+            <Button x:Name="agreeButton" Content="ACEPTAR" Click="agreeButton_Click" Margin="0 10 0 0"/>
         </StackPanel>
         
     </Grid>

@@ -76,7 +76,7 @@ namespace OpenBullet.Views.Main
                 }
                 else
                 {
-                    MessageBox.Show("there are currently no updates available", "SilverBullet", MessageBoxButton.OK, MessageBoxImage.Information);
+                    MessageBox.Show("actualmente no hay actualizaciones disponibles", "OpenBullet", MessageBoxButton.OK, MessageBoxImage.Information);
                 }
             }
             catch { }

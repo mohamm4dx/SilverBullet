@@ -35,34 +35,30 @@
                 x:Name="menuOptionManager"
                 MouseDown="menuOptionManager_MouseDown">
                 <DockPanel>
-                    <iconPacks:PackIconFontAwesome Kind="UserCogSolid" />
                     <TextBlock
                         Margin="3,0,0,0"
-                        Text="Manager" />
+                        Text="Inicio" />
                 </DockPanel>
             </Label>
             <Label
                 x:Name="menuOptionStacker"
                 MouseDown="menuOptionStacker_MouseDown">
                 <DockPanel>
-                    <iconPacks:PackIconFontAwesome Kind="LayerGroupSolid" />
-                    <TextBlock Margin="4,0,0,0">Stacker</TextBlock>
+                    <TextBlock Margin="4,0,0,0">Opciones</TextBlock>
                 </DockPanel>
             </Label>
             <Label
                 x:Name="menuOptionOtherOptions"
                 MouseDown="menuOptionOtherOptions_MouseDown">
                 <DockPanel>
-                    <iconPacks:PackIconIonicons Kind="OptionsMD" />
-                    <TextBlock Margin="4,0,0,0">Other Options</TextBlock>
+                    <TextBlock Margin="4,0,0,0">Otras Opciones</TextBlock>
                 </DockPanel>
             </Label>
             <Label
                 x:Name="menuOptionOCRSettings"
                 MouseDown="menuOptionOCRSettings_MouseDown">
                 <DockPanel>
-                    <iconPacks:PackIconMaterial Kind="Ocr" />
-                    <TextBlock Margin="4,0,0,0">OCR Testing</TextBlock>
+                    <TextBlock Margin="4,0,0,0">OCR</TextBlock>
                 </DockPanel>
             </Label>
         </StackPanel>

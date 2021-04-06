@@ -16,14 +16,14 @@
         </Grid.RowDefinitions>
 
         <TextBlock Grid.Row="0" Foreground="{DynamicResource ForegroundCustom}" Margin="0 0 0 10" >
-            <Span>Remember that some plugins might contain </Span>
-            <Span FontWeight="Bold" Foreground="{DynamicResource ForegroundBad}">MALICIOUS CODE</Span>
-            <Span>that runs even without clicking any buttons!</Span>
-            <Span TextDecorations="Underline" FontWeight="Bold">Only load plugins you can trust!</Span>
+            <Span>TIP:PUEDE SER QUE ALGUNO ESTE </Span>
+            <Span FontWeight="Bold" Foreground="{DynamicResource ForegroundBad}">DESACTUALIZADO</Span>
+            <Span>Y SE ACTUALIZARAN</Span>
+            <Span TextDecorations="Underline" FontWeight="Bold">PROXIMAMENTE!</Span>
         </TextBlock>
 
         <StackPanel Grid.Row="1" x:Name="topMenu" Orientation="Horizontal">
-            <Label Content="Selected Plugin:" />
+            <Label Content="SELECCIONA" />
             <ComboBox x:Name="pluginSelector" Width="200" Margin="5 0 0 0" SelectionChanged="pluginSelector_SelectionChanged" />
         </StackPanel>
 

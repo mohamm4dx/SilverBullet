@@ -35,7 +35,7 @@
                 MouseDown="menuOptionRuriLib_MouseDown">
                 <DockPanel>
                     <iconPacks:PackIconFontAwesome Kind="CogsSolid" />
-                    <TextBlock Margin="3,0,0,0">RuriLib</TextBlock>
+                    <TextBlock Margin="3,0,0,0">Libreria</TextBlock>
                 </DockPanel>
             </Label>
             <Label
@@ -43,7 +43,7 @@
                 MouseDown="menuOptionOpenBullet_MouseDown">
                 <DockPanel>
                     <iconPacks:PackIconMaterial Kind="Ammunition" />
-                    <TextBlock Margin="3,0,0,0">SilverBullet</TextBlock>
+                    <TextBlock Margin="3,0,0,0">Openbullet</TextBlock>
                 </DockPanel>
             </Label>
         </StackPanel>

@@ -52,7 +52,7 @@
                             <iconPacks:PackIconMaterial
                                 Margin="0,0,3,0"
                                 Kind="FindReplace" />
-                            <TextBlock>Find &amp; Replace</TextBlock>
+                            <TextBlock>Buscar &amp; Remplazar</TextBlock>
                         </DockPanel>
                     </Button>
                     <Label
@@ -65,7 +65,7 @@
                         Foreground="{DynamicResource ForegroundToCheck}">
                         <DockPanel>
                             <iconPacks:PackIconMaterial Kind="ScriptOutline" />
-                            <TextBlock Margin="3,0,0,0">LoliScript Code</TextBlock>
+                            <TextBlock Margin="3,0,0,0">LoliScript Codigo</TextBlock>
                         </DockPanel>
                     </Label>
                     <StackPanel
@@ -114,7 +114,7 @@
                             <TextBlock
                                 Margin="5,0"
                                 VerticalAlignment="Center">
-                                SWITCH TO STACK VIEW
+                                CAMBIAR VISTA
                             </TextBlock>
                         </StackPanel>
                     </Button>
@@ -132,7 +132,7 @@
                             <TextBlock
                                 Margin="5,0"
                                 VerticalAlignment="Center">
-                                Documentation
+                                DOCUMENTACION
                             </TextBlock>
                         </StackPanel>
                     </Button>
@@ -487,7 +487,7 @@
                     <iconPacks:PackIconFontAwesome
                         VerticalAlignment="Center"
                         Kind="BugSolid" />
-                    <TextBlock Margin="3,1,0,0">Debugger</TextBlock>
+                    <TextBlock Margin="3,1,0,0">Prueba tu configr</TextBlock>
                 </DockPanel>
             </Label>
 
