@@ -30,12 +30,12 @@
             </Style>
         </Grid.Resources>
 
-        <Label Grid.Column="0" Grid.Row="0" Content="Name:" />
+        <Label Grid.Column="0" Grid.Row="0" Content="NOMBRE" />
         <TextBox x:Name="nameTextbox" Grid.Column="1" Grid.Row="0" Margin="5" KeyDown="textbox_KeyDown"/>
-        <Label Grid.Column="0" Grid.Row="1" Content="Category:" />
+        <Label Grid.Column="0" Grid.Row="1" Content="CATEGORIA" />
         <ComboBox x:Name="categoryCombobox" Grid.Column="1" Grid.Row="1" Text="Default" IsEditable="True" Margin="5" KeyDown="textbox_KeyDown"/>
-        <Label Grid.Column="0" Grid.Row="2" Content="Author:" />
+        <Label Grid.Column="0" Grid.Row="2" Content="AUTOR" />
         <TextBox x:Name="authorTextbox" Grid.Column="1" Grid.Row="2" Margin="5" KeyDown="textbox_KeyDown"/>
-        <Button Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" x:Name="acceptButton" Content="ACCEPT" Click="acceptButton_Click" Margin="5"/>
+        <Button Grid.Column="0" Grid.ColumnSpan="3" Grid.Row="4" x:Name="acceptButton" Content="ACEPTA" Click="acceptButton_Click" Margin="5"/>
     </Grid>
 </Page>

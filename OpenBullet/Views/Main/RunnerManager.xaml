@@ -27,8 +27,8 @@
             FontWeight="Bold"
             Foreground="{DynamicResource ForegroundMain}"
             TextAlignment="Center">
-            Welcome to Silver Bullet!<LineBreak />
-            Create a Runner to get started.</TextBlock>
+            🅱🅸🅴🅽🆅🅴🅽🅸🅳🅾 <LineBreak />
+            🅾🅿🅴🅽🅱🆄🅻🅻🅴🆃</TextBlock>
 
         <StackPanel
             Grid.Row="0"
@@ -45,7 +45,7 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        New
+                        Nuevo
                     </TextBlock>
                 </StackPanel>
             </Button>
@@ -62,7 +62,7 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Start All
+                        Iniciar Todos 
                     </TextBlock>
                 </StackPanel>
             </Button>
@@ -79,7 +79,7 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Stop All
+                        Parar todos
                     </TextBlock>
                 </StackPanel>
             </Button>
@@ -95,11 +95,11 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Remove All
+                        Borrar todo
                     </TextBlock>
                 </StackPanel>
             </Button>
-            <Label Content="TIP: Click on a Runner to switch to the detailed view" />
+            <Label Content="TIP: Asegurate de tener tu config actualizada" />
         </StackPanel>
 
         <ScrollViewer

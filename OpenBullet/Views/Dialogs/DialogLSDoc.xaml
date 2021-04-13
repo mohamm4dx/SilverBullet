@@ -35,7 +35,7 @@
                     x:Name="sectionComboBox"
                     SelectionChanged="sectionComboBox_SelectionChanged" />
                 <Label
-                    Content="TABLE OF CONTENTS:"
+                    Content="CONTENIDO"
                     FontWeight="Bold"
                     Foreground="{DynamicResource ForegroundGood}" />
             </StackPanel>
@@ -54,7 +54,7 @@
             <StackPanel Grid.Row="0">
                 <Label
                     x:Name="titleLabel"
-                    Content="Select a menu option"
+                    Content="Seleccione una opción de menu"
                     FontSize="20"
                     FontWeight="Bold" />
             </StackPanel>

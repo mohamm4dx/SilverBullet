@@ -56,7 +56,7 @@
                 Grid.Row="0"
                 Grid.Column="0"
                 VerticalAlignment="Center"
-                Content="Progress:" />
+                Content="Progreso:" />
             <Label
                 Grid.Row="1"
                 Grid.Column="0"
@@ -222,7 +222,7 @@
                 <TextBlock
                     Name="checkButtonLabel"
                     Margin="5,0,0,0">
-                    CHECK
+                    CHECKEAR
                 </TextBlock>
             </DockPanel>
         </Button>
@@ -485,7 +485,7 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Import
+                        Importar
                     </TextBlock>
                 </StackPanel>
             </Button>
@@ -502,7 +502,7 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Export
+                        Exportar
                     </TextBlock>
                 </StackPanel>
             </Button>
@@ -517,7 +517,7 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Delete
+                        Borrar
                     </TextBlock>
                 </StackPanel>
             </Button>
@@ -532,13 +532,13 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Delete All
+                        Borr. todo
                     </TextBlock>
                 </StackPanel>
             </Button>
             <Expander
                 ExpandDirection="Down"
-                Header="More Actions"
+                Header="Mas Opciones"
                 IsExpanded="False">
                 <StackPanel>
                     <Button
@@ -552,7 +552,7 @@
                             <TextBlock
                                 Margin="5,0"
                                 VerticalAlignment="Center">
-                                Del. Not Working
+                                Borr. no trabajan
                             </TextBlock>
                         </StackPanel>
                     </Button>
@@ -567,7 +567,7 @@
                             <TextBlock
                                 Margin="5,0"
                                 VerticalAlignment="Center">
-                                Del. Duplicates
+                                Borr. duplic
                             </TextBlock>
                         </StackPanel>
                     </Button>
@@ -582,7 +582,7 @@
                             <TextBlock
                                 Margin="5,0"
                                 VerticalAlignment="Center">
-                                Del. Untested
+                                Borr. malas
                             </TextBlock>
                         </StackPanel>
                     </Button>

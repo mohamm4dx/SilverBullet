@@ -28,7 +28,7 @@
                     <iconPacks:PackIconMaterial
                         VerticalAlignment="Center"
                         Kind="PlusThick" />
-                    <TextBlock Margin="4,0,0,0">Add Source</TextBlock>
+                    <TextBlock Margin="4,0,0,0">Agregua fuente</TextBlock>
                 </DockPanel>
             </Button>
             <Button
@@ -38,7 +38,7 @@
                     <iconPacks:PackIconMaterialDesign
                         Margin="0,0,4,0"
                         Kind="Clear" />
-                    <TextBlock>Clear Sources</TextBlock>
+                    <TextBlock>Limpiar fuente</TextBlock>
                 </DockPanel>
             </Button>
         </StackPanel>

@@ -44,7 +44,7 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Search
+                        Buscar
                     </TextBlock>
                 </StackPanel>
             </Button>
@@ -187,44 +187,28 @@
                     <GridViewColumn
                         Width="130"
                         DisplayMemberBinding="{Binding Path=Config.Settings.Name}">
-                        <GridViewColumn.Header>
-                            <GridViewColumnHeader
+                        <GridViewColumnHeader
                                 Click="listViewColumnHeader_Click"
-                                Tag="Config.Settings.Name">
-                                Name
-                            </GridViewColumnHeader>
-                        </GridViewColumn.Header>
+                                Tag="Config.Settings.Name" Content="NOMBRE"/>
                     </GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Path=Config.Settings.Author}">
-                        <GridViewColumn.Header>
-                            <GridViewColumnHeader
+                        <GridViewColumnHeader
                                 Click="listViewColumnHeader_Click"
-                                Tag="Config.Settings.Author">
-                                Author
-                            </GridViewColumnHeader>
-                        </GridViewColumn.Header>
+                                Tag="Config.Settings.Author" Content="AUTOR"/>
                     </GridViewColumn>
                     <GridViewColumn
                         Width="100"
                         DisplayMemberBinding="{Binding Path=Category}">
-                        <GridViewColumn.Header>
-                            <GridViewColumnHeader
+                        <GridViewColumnHeader
                                 Click="listViewColumnHeader_Click"
-                                Tag="Category">
-                                Category
-                            </GridViewColumnHeader>
-                        </GridViewColumn.Header>
+                                Tag="Category" Content="CATEGORIA"/>
                     </GridViewColumn>
                     <GridViewColumn
                         Width="100"
                         DisplayMemberBinding="{Binding Path=Config.AllowedWordlists}">
-                        <GridViewColumn.Header>
-                            <GridViewColumnHeader
+                        <GridViewColumnHeader
                                 Click="listViewColumnHeader_Click"
-                                Tag="Config.AllowedWordlists">
-                                Wordlists
-                            </GridViewColumnHeader>
-                        </GridViewColumn.Header>
+                                Tag="Config.AllowedWordlists" Content="COMBOS"/>
                     </GridViewColumn>
                     <GridViewColumn
                         Width="40"
@@ -271,13 +255,9 @@
                     <GridViewColumn
                         Width="200"
                         DisplayMemberBinding="{Binding Path=Config.Settings.LastModified}">
-                        <GridViewColumn.Header>
-                            <GridViewColumnHeader
+                        <GridViewColumnHeader
                                 Click="listViewColumnHeader_Click"
-                                Tag="Config.Settings.LastModified">
-                                Last Modified
-                            </GridViewColumnHeader>
-                        </GridViewColumn.Header>
+                                Tag="Config.Settings.LastModified" Content="ULTIMA MODIFICACION"/>
                     </GridViewColumn>
                 </GridView>
             </ListView.View>
@@ -293,7 +273,7 @@
                 Click="refreshButton_Click">
                 <DockPanel>
                     <iconPacks:PackIconMaterial Kind="Refresh" />
-                    <TextBlock Margin="5,0,0,0">Refresh</TextBlock>
+                    <TextBlock Margin="5,0,0,0">Refrescar</TextBlock>
                 </DockPanel>
             </Button>
             <Button
@@ -301,7 +281,7 @@
                 Grid.Row="2"
                 Grid.Column="1"
                 Click="selectButton_Click"
-                Content="Select" />
+                Content="Selecionar" />
 
         </Grid>
 

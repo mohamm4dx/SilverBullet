@@ -71,7 +71,7 @@
                 <Label
                     x:Name="titleLabel"
                     Margin="-5,0,0,0"
-                    Content="SilverBullet"
+                    Content="OpenBullet"
                     FontFamily="pack://application:,,,/Fonts/#Century Gothic"
                     FontSize="14"
                     MouseLeftButtonDown="titleLabel_MouseLeftButtonDown" />

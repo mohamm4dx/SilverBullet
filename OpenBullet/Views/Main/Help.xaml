@@ -26,7 +26,7 @@
                     <iconPacks:PackIconMaterial
                         VerticalAlignment="Center"
                         Kind="InformationOutline" />
-                    <TextBlock Margin="3,0,0,0">About</TextBlock>
+                    <TextBlock Margin="3,0,0,0">Info</TextBlock>
                 </DockPanel>
             </Label>
             <Label
@@ -34,15 +34,7 @@
                 FontWeight="Bold"
                 MouseLeftButtonUp="Label_MouseLeftButtonUp_1">
                 <DockPanel>
-                    <Path
-                        Width="14"
-                        Height="15"
-                        Margin="0,0,3,0"
-                        VerticalAlignment="Center"
-                        Data="M125 125V875H875V125H125ZM812.5 812.5H187.5V187.5H812.5V812.5ZM250 687.5H625V625H250V687.5ZM750 500H250V562.5H750V500ZM750 375H250V437.5H750V375Z"
-                        Fill="{Binding ElementName=releaseNotesLabel, Path=Foreground}"
-                        Stretch="Fill" />
-                    <TextBlock>Release Notes</TextBlock>
+                    <TextBlock>Notas de lanzamiento</TextBlock>
                 </DockPanel>
             </Label>
             <!--<Label

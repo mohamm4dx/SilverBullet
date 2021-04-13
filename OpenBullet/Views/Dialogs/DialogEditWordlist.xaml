@@ -14,7 +14,7 @@
 
     <StackPanel>
         <DockPanel>
-            <Label Content="Name:" />
+            <Label Content="NOMBRE" />
             <TextBox
                 x:Name="wordlistName"
                 Margin="12,0,0,0" />
@@ -26,13 +26,13 @@
                 Margin="20,0,0,0" />
         </DockPanel>
         <DockPanel>
-            <Label Content="Type:" />
+            <Label Content="TIPO" />
             <ComboBox
                 x:Name="wordlistType"
                 Margin="19,0,0,0" />
         </DockPanel>
         <DockPanel>
-            <Label Content="Purpose:" />
+            <Label Content="OBJETIVO" />
             <TextBox
                 x:Name="wordlistPurpose"
                 Margin="0,0,0,0" />
@@ -44,7 +44,7 @@
                 Click="Button_Click_1">
                 <DockPanel>
                     <iconPacks:PackIconFontAwesome Kind="CheckCircleRegular" />
-                    <TextBlock Margin="5,0">Accept</TextBlock>
+                    <TextBlock Margin="5,0">Acepta</TextBlock>
                 </DockPanel>
             </Button>
             <Button
@@ -53,7 +53,7 @@
                 Click="Button_Click">
                 <DockPanel>
                     <iconPacks:PackIconUnicons Kind="TimesCircle" />
-                    <TextBlock Margin="5,0">Canel</TextBlock>
+                    <TextBlock Margin="5,0">Cancela</TextBlock>
                 </DockPanel>
             </Button>
         </DockPanel>

@@ -290,7 +290,7 @@
                             Grid.Column="1"
                             VerticalAlignment="Center"
                             TextWrapping="Wrap">
-                            START
+                            EMPEZAR
                         </TextBlock>
                     </Grid>
                 </Button>
@@ -707,7 +707,7 @@
                     <Button
                         x:Name="selectConfigButton"
                         Click="selectConfigButton_Click"
-                        Content="Select CFG"
+                        Content="CONFIG"
                         IsEnabled="{Binding ControlsEnabled}" />
                     <Label Content="{Binding ConfigName}" />
                 </StackPanel>
@@ -724,7 +724,7 @@
                     <Button
                         x:Name="selectWordlistButton"
                         Click="selectWordlistButton_Click"
-                        Content="Select List"
+                        Content="COMBO"
                         IsEnabled="{Binding ControlsEnabled}" />
                     <Label Content="{Binding WordlistName}" />
                 </StackPanel>
@@ -763,7 +763,7 @@
                             <TextBlock
                                 Margin="5,0"
                                 VerticalAlignment="Center">
-                                Back
+                                ATRAS
                             </TextBlock>
                         </StackPanel>
                     </Button>

@@ -12,7 +12,7 @@ namespace SilverBulletUpdater
         static void Main(string[] args)
         {
             Stopwatch stopwatch = new Stopwatch();
-            Console.Title = "SilverBullet Updater";
+            Console.Title = "OpenBullet repositorio";
             Console.SetWindowSize(70, 20);
             Console.WriteLine("");
             Thread.Sleep(1000);
@@ -21,12 +21,12 @@ namespace SilverBulletUpdater
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             try
             {
-                string address = "https://c-cracking.org/ApplicationVeri/SilverBullet/SilverBullet.zip";
+                string address = "https://github.com/g3v3r/SilverBullet";
                 string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
                 WebClient webClient = new WebClient();
                 if (!File.Exists("Update.zip"))
                 {
-                    Console.WriteLine("Downloading Update...");
+                    Console.WriteLine("Descargar actualizacion...");
                     webClient.DownloadFile(address, baseDirectory + "Update.zip");
                     Console.WriteLine("");
                 }
@@ -36,13 +36,13 @@ namespace SilverBulletUpdater
                     Console.WriteLine("Previous Update Files Deleted.");
                     Console.WriteLine("");
                     webClient.DownloadFile(address, baseDirectory + "Update.zip");
-                    Console.WriteLine("Downloading Update...");
+                    Console.WriteLine("Descargando actualizacion...");
                     Console.WriteLine("");
                 }
                 if (File.Exists("Update.zip"))
                 {
                     ZipFile zipFile = ZipFile.Read("Update.zip");
-                    Console.WriteLine("UnZipping Archive...");
+                    Console.WriteLine("Descomprimir archivo...");
                     zipFile.ExtractAll(baseDirectory, ExtractExistingFileAction.OverwriteSilently);
                     zipFile.Dispose();
                     Console.WriteLine("");
@@ -62,7 +62,7 @@ namespace SilverBulletUpdater
                 Console.WriteLine($"Error Extracting Archive\n{ex.Message}");
             }
             Console.WriteLine("");
-            Console.WriteLine("Press Any key to Close.");
+            Console.WriteLine("Presione cualquier tecla para cerrar.");
             Console.ReadKey();
         }
     }

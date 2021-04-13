@@ -18,72 +18,57 @@
             <TextBlock
                 FontSize="14"
                 Foreground="{DynamicResource ForegroundMain}"
-                TextWrapping="Wrap">
-                <Italic>OpenBullet</Italic>
-                is a webtesting suite that can be used for <Bold>scraping</Bold>
-                and <Bold>parsing</Bold>
-                data, automated <Bold>pentesting</Bold>
-                , selenium <Bold>unit testing</Bold>
-                and much more..<LineBreak /><LineBreak />
-                <Span Foreground="{DynamicResource ForegroundBad}"><Bold>IT IS ILLEGAL</Bold>
-                    to use this program to perform (D)DoS or credential stuffing attacks on sites you don't own!</Span>
+                TextWrapping="Wrap" Height="450" Margin="0,0,10,0">
+                <Italic>OpenBullet Spain</Italic>
+                es una suite de pruebas web que se puede utilizar para <Bold>scraping</Bold>
+                y <Bold>analizar</Bold>
+                datos, automatizados <Bold>pentesting</Bold>
+                , selenium <Bold>examen de unidad</Bold>
+                y mucho mas..<LineBreak /><LineBreak />
+                <Span Foreground="{DynamicResource ForegroundBad}"><Bold>ES ILEGAL</Bold>
+                    usar este programa para realizar (D) DoS o ataques de relleno de credenciales en sitios que no son de su propiedad.</Span>
                 <LineBreak/>
-                   <LineBreak/><Span Foreground="{DynamicResource ForegroundGood}"><Bold FontSize="14.5">FIXED And Updated by MOHAMMAD</Bold></Span><LineBreak /><LineBreak/>
-                Special thanks to these:<LineBreak /><LineBreak />
-                • <Span Foreground="{DynamicResource ForegroundCustom}">AlirezaCR</Span><LineBreak/>
-                • Mohammad20000<LineBreak />
-                • CY3ER<LineBreak />
-                • Mohammad Salatin<LineBreak />
-                • Sina13m<LineBreak />
-                • HOSEENJ<LineBreak />
-                • UkUnknown<LineBreak />
+                   <LineBreak/><Span Foreground="{DynamicResource ForegroundGood}"><Bold FontSize="14.5">Agradecimiento a Ruri demiurgo meinname y Mohamad</Bold></Span><LineBreak /><LineBreak/>
+                Editado y traducido :<LineBreak /><LineBreak />
+                 <Span Foreground="{DynamicResource ForegroundCustom}">•g3v3r•</Span><LineBreak/>
+                ━━━━━━━<LineBreak />
+                • INFINITEY6622<LineBreak />
+                • Yom Rawr<LineBreak />
+                • LeXector<LineBreak />
+                • MetaExtreme<LineBreak />
+                • michalani<LineBreak />
+                • Karim Ben Ammar<LineBreak />
+                • sondreavik<LineBreak />
+                • iItamai<LineBreak />
                 • Ruri(Made Openbullet)<LineBreak />
-                • its5Q<LineBreak />
+                
                 <LineBreak />
                 <LineBreak />
                 <Span Foreground="LightBlue">
-                    This <Bold Foreground="LightSteelBlue">
+                     <Bold Foreground="LightSteelBlue">
                         OpenBullet
                     </Bold>
-                    is a mod version with more features and customization. It is free</Span><LineBreak /><LineBreak />
+                     traducido al español</Span><LineBreak /><LineBreak />
             </TextBlock>
 
         </StackPanel>
 
         <StackPanel
-            Grid.Row="3"
-            Orientation="Horizontal">
-            <Button IsEnabled="False"
-                x:Name="docuButton"
-                Margin="0,5">
-                <StackPanel Orientation="Horizontal">
-                    <Image RenderOptions.BitmapScalingMode="HighQuality"
-                        Width="20"
-                        Source="/Images/Icons/book.png" />
-                    <TextBlock
-                        Margin="5,0"
-                        VerticalAlignment="Center">
-                        Usage Guide
-                    </TextBlock>
-                </StackPanel>
-            </Button>
-        </StackPanel>
+            Orientation="Horizontal" RenderTransformOrigin="0.497,0.797" Margin="0,391,0,0"/>
         <StackPanel
-            Grid.Row="3"
             HorizontalAlignment="Right"
-            Orientation="Horizontal">
+            Orientation="Horizontal" Margin="0,402,10,10" Width="310">
             <Label
-                Content="If you enjoy please consider Donating some BTC:"
+                Content="🅾🅿🅴🅽🅱🆄🅻🅻🅴🆃 🅶🅴🆅🅴🆁"
                 FontSize="11.5"
                 FontWeight="Bold"
-                Foreground="#FF9EDAFF" />
+                Foreground="#FF9EDAFF" Margin="0,24,0,10" Width="197" />
             <TextBox
-                Height="30"
                 MinWidth="250"
                 FontWeight="Bold"
                 FontSize="12.5"
                 IsReadOnly="True"
-                Text="1PbFK28PGsXy1VQG4PBdofLqDdRW4LJ8TS" />
+                Text="DISFRUTA" Margin="0,17,0,12" Width="157" />
         </StackPanel>
 
     </Grid>

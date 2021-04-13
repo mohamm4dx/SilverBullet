@@ -34,7 +34,7 @@
                     <Bold Foreground="{DynamicResource ForegroundMain}">
                         <TextBlock Text="{Binding App}" />
                         <LineBreak />
-                        ========================
+                        ━━━━━━━━━━━━━━━━━━━━━━━━━
                     </Bold>
                 </Paragraph>
             </FlowDocument>

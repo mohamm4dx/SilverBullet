@@ -27,11 +27,11 @@
                     <iconPacks:PackIconMaterial
                         Margin="0,0,3,0"
                         Kind="BorderColor" />
-                    <TextBlock>COLORS</TextBlock>
+                    <TextBlock>COLORES</TextBlock>
                 </DockPanel>
             </Label>
             <DockPanel>
-                <Label Content="Background Main" />
+                <Label Content="Fondo Principal" />
                 <xctk:ColorPicker
                     Name="BackgroundMain"
                     Width="100"
@@ -39,7 +39,7 @@
                     SelectedColorChanged="ColorPicker_SelectedColorChanged" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Background Secondary" />
+                <Label Content="Plano secundario" />
                 <xctk:ColorPicker
                     Name="BackgroundSecondary"
                     Width="100"
@@ -48,7 +48,7 @@
             </DockPanel>
             <Separator Margin="0,10" />
             <DockPanel>
-                <Label Content="Foreground Main" />
+                <Label Content="Primer plano" />
                 <xctk:ColorPicker
                     Name="ForegroundMain"
                     Width="100"
@@ -56,7 +56,7 @@
                     SelectedColorChanged="ColorPicker_SelectedColorChanged" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Foreground Good" />
+                <Label Content="Buenas" />
                 <xctk:ColorPicker
                     Name="ForegroundGood"
                     Width="100"
@@ -64,7 +64,7 @@
                     SelectedColorChanged="ColorPicker_SelectedColorChanged" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Foreground Bad" />
+                <Label Content="Malas" />
                 <xctk:ColorPicker
                     Name="ForegroundBad"
                     Width="100"
@@ -72,7 +72,7 @@
                     SelectedColorChanged="ColorPicker_SelectedColorChanged" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Foreground Custom" />
+                <Label Content="Custom" />
                 <xctk:ColorPicker
                     Name="ForegroundCustom"
                     Width="100"
@@ -80,7 +80,7 @@
                     SelectedColorChanged="ColorPicker_SelectedColorChanged" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Foreground Retry" />
+                <Label Content="Retrires" />
                 <xctk:ColorPicker
                     Name="ForegroundRetry"
                     Width="100"
@@ -88,7 +88,7 @@
                     SelectedColorChanged="ColorPicker_SelectedColorChanged" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Foreground To Check" />
+                <Label Content="To Check" />
                 <xctk:ColorPicker
                     Name="ForegroundToCheck"
                     Width="100"
@@ -96,7 +96,7 @@
                     SelectedColorChanged="ColorPicker_SelectedColorChanged" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Foreground Ocr Rate" />
+                <Label Content="Radio OCR" />
                 <xctk:ColorPicker
                     Name="ForegroundOcrRate"
                     Width="100"
@@ -104,7 +104,7 @@
                     SelectedColorChanged="ColorPicker_SelectedColorChanged" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Foreground Menu Sel." />
+                <Label Content="Menu Sel." />
                 <xctk:ColorPicker
                     Name="ForegroundMenuSelected"
                     Width="100"
@@ -115,7 +115,7 @@
                 x:Name="resetButton"
                 Margin="0,10,0,0"
                 Click="resetButton_Click"
-                Content="RESET" />
+                Content="RESETEAR" />
         </StackPanel>
 
         <StackPanel
@@ -126,7 +126,7 @@
                     <iconPacks:PackIconIonicons
                         Width="18"
                         Kind="ImagesMD" />
-                    <TextBlock Margin="5,0,0,0">IMAGES</TextBlock>
+                    <TextBlock Margin="5,0,0,0">IMAGENES</TextBlock>
                 </DockPanel>
             </Label>
             <CheckBox
@@ -134,11 +134,11 @@
                 VerticalAlignment="Center"
                 VerticalContentAlignment="Center"
                 Checked="useImagesCheckbox_Checked"
-                Content="Use Images"
+                Content="Usar Imagen"
                 IsChecked="{Binding UseImage}"
                 Unchecked="useImagesCheckbox_Unchecked" />
             <DockPanel DockPanel.Dock="Top">
-                <Label Content="Opacity" />
+                <Label Content="Opacidad" />
                 <xctk:IntegerUpDown
                     x:Name="backgroundImageOpacityUpDown"
                     Width="50"
@@ -153,7 +153,7 @@
             </DockPanel>
             <Separator Margin="0,10" />
             <DockPanel>
-                <Label Content="Background Image" />
+                <Label Content="Imagen de fondo" />
                 <Image
                     x:Name="loadBackgroundImage"
                     Width="20"
@@ -175,7 +175,7 @@
                 Source="/Images/Themes/empty.png" />
             <Separator Margin="0,10" />
             <DockPanel>
-                <Label Content="Background Logo" />
+                <Label Content="Logotipo de fondo" />
                 <Image
                     x:Name="loadBackgroundLogo"
                     Width="20"
@@ -206,13 +206,13 @@
                         Width="18"
                         VerticalAlignment="Center"
                         Kind="CardPlusOutline" />
-                    <TextBlock Margin="5,0,0,0">ADDITIONAL</TextBlock>
+                    <TextBlock Margin="5,0,0,0">ADICIONAL</TextBlock>
                 </DockPanel>
             </Label>
             <CheckBox
                 VerticalAlignment="Center"
                 VerticalContentAlignment="Center"
-                Content="Allow Transparency [EXTREME CARE]"
+                Content="Permitir transparencia EXTREMO"
                 IsChecked="{Binding AllowTransparency}">
                 <CheckBox.ToolTip>
                     <TextBlock>
@@ -221,14 +221,14 @@
                         This feature requires a restart of the program to be activated.</TextBlock>
                 </CheckBox.ToolTip>
             </CheckBox>
-            <Label Content="Snow Options [ RESTART REQUIRED ]" />
+            <Label Content="Opciones de nieve [REINICIAR]" />
             <CheckBox
                 VerticalAlignment="Center"
                 VerticalContentAlignment="Center"
-                Content="Enable Snow"
+                Content="Habilitar nieve"
                 IsChecked="{Binding EnableSnow}" />
             <DockPanel DockPanel.Dock="Top">
-                <Label Content="Snow amount" />
+                <Label Content="Cantidad de nieve" />
                 <xctk:IntegerUpDown
                     Width="50"
                     Margin="10,0,0,0"

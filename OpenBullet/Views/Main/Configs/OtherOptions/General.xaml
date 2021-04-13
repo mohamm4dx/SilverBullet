@@ -14,7 +14,7 @@
     <Grid>
         <StackPanel>
             <Label
-                Content="Name"
+                Content="Nombre"
                 DockPanel.Dock="Top" />
             <TextBox
                 DockPanel.Dock="Top"
@@ -31,21 +31,21 @@
                         Data="M929.664 875.52l25.173-25.173c34.688-34.731 29.44-96.299-11.819-137.515l-519.125-519.125-168.192-61.525c-21.12-7.765-41.685 2.304-45.867 22.4-0.46 2.265-0.724 4.869-0.724 7.535 0 5.116 0.97 10.005 2.737 14.494l-0.093-0.269 62.72 169.643 517.675 517.717c41.259 41.216 102.827 46.507 137.515 11.776zM401.237 823.894c23.564 0 42.667-19.103 42.667-42.667s-19.103-42.667-42.667-42.667h-170.667c-47.128 0-85.333-38.205-85.333-85.333v0-512c0-47.128 38.205-85.333 85.333-85.333v0h512c47.128 0 85.333 38.205 85.333 85.333v0 170.667c0 23.564 19.103 42.667 42.667 42.667s42.667-19.103 42.667-42.667v0-170.667c0-94.257-76.41-170.667-170.667-170.667v0h-512c-94.257 0-170.667 76.41-170.667 170.667v0 512c0 94.257 76.41 170.667 170.667 170.667v0h170.667z"
                         Fill="{DynamicResource ForegroundRetry}"
                         Stretch="Fill" />
-                    <TextBlock>Author:</TextBlock>
+                    <TextBlock>Autor:</TextBlock>
                 </DockPanel>
             </Label>
             <TextBox
                 DockPanel.Dock="Top"
                 Text="{Binding Author}" />
             <Label
-                Content="Additional Information"
+                Content="Information adicional"
                 DockPanel.Dock="Top" />
             <TextBox
                 Margin="0,0,0,10"
                 DockPanel.Dock="Top"
                 Text="{Binding AdditionalInfo}" />
             <DockPanel>
-                <Label Content="Suggested Bots" />
+                <Label Content="Bots sugeridos" />
                 <xctk:IntegerUpDown
                     Width="50"
                     Margin="10,0,0,0"
@@ -57,7 +57,7 @@
                     Value="{Binding SuggestedBots}" />
             </DockPanel>
             <DockPanel>
-                <Label Content="Maximum CPM to avoid overloading the website (0 = infinite)" />
+                <Label Content="CPM máximo para evitar sobrecargar el sitio web (0 = infinito)" />
                 <xctk:IntegerUpDown
                     Width="100"
                     Margin="10,0,0,0"
@@ -70,15 +70,15 @@
             </DockPanel>
             <CheckBox
                 VerticalContentAlignment="Center"
-                Content="Save empty captures"
+                Content="Guardar capturas vacías"
                 IsChecked="{Binding SaveEmptyCaptures}" />
             <CheckBox
                 VerticalContentAlignment="Center"
-                Content="Continue after Custom Status"
+                Content="Continuar después del estado personalizado"
                 IsChecked="{Binding ContinueOnCustom}" />
             <CheckBox
                 VerticalContentAlignment="Center"
-                Content="Save hits to a text file instead of DB (the output can be found in the Hits/ConfigName folder)"
+                Content="Guarde los hits en un archivo de texto en lugar de DB (el resultado se puede encontrar en la carpeta Hits / ConfigName)"
                 IsChecked="{Binding SaveHitsToTextFile}" />
         </StackPanel>
     </Grid>

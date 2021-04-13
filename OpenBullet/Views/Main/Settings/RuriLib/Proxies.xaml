@@ -32,14 +32,14 @@
                 FontWeight="Bold" />
             <CheckBox
                 VerticalContentAlignment="Center"
-                Content="Allow Concurrent Use"
+                Content="Permitir el uso concurrente"
                 IsChecked="{Binding ConcurrentUse}" />
             <CheckBox
                 VerticalContentAlignment="Center"
-                Content="Never Ban Proxies"
+                Content="Nunca prohibir proxies"
                 IsChecked="{Binding NeverBan}" />
             <DockPanel>
-                <Label Content="Ban Loop Evasion (0 = disabled)" />
+                <Label Content="Ban Loop (0=desactivado)" />
                 <xctk:IntegerUpDown
                     Width="60"
                     Margin="10,0,0,0"
@@ -53,14 +53,14 @@
             </DockPanel>
             <CheckBox
                 VerticalContentAlignment="Center"
-                Content="Shuffle Proxies on Start"
+                Content="Proxies aleatorios al inicio"
                 IsChecked="{Binding ShuffleOnStart}" />
             <Label
                 Content="CloudFlare"
                 FontWeight="Bold" />
             <CheckBox
                 VerticalContentAlignment="Center"
-                Content="Don't Reuse Clearance Cookie (CF)"
+                Content="No reutilice la cookie de liquidacion (CF)"
                 IsChecked="{Binding AlwaysGetClearance}" />
         </StackPanel>
 
@@ -77,7 +77,7 @@
 
             <Label
                 Grid.Row="0"
-                Content="Global Ban Keys:" />
+                Content="Claves Ban" />
             <RichTextBox
                 x:Name="globalBanKeysTextbox"
                 Grid.Row="1"
@@ -93,7 +93,7 @@
             </RichTextBox>
             <Label
                 Grid.Row="2"
-                Content="Global Retry Keys:" />
+                Content="Claves Retires:" />
             <RichTextBox
                 x:Name="globalRetryKeysTextbox"
                 Grid.Row="3"
@@ -116,13 +116,13 @@
             Grid.ColumnSpan="2"
             VerticalScrollBarVisibility="Auto">
             <StackPanel>
-                <Label Content="Reloading" />
+                <Label Content="Recarga" />
                 <CheckBox
                     VerticalContentAlignment="Center"
-                    Content="Reload proxies when all banned"
+                    Content="Recargar proxies cuando todos esten baneados"
                     IsChecked="{Binding Reload}" />
                 <DockPanel DockPanel.Dock="Top">
-                    <Label Content="Reload interval in minutes (0 = only reload when all banned):" />
+                    <Label Content="Intervalo de recarga en minutos (0 = solo recarga cuando todo esta prohibido):" />
                     <xctk:IntegerUpDown
                         Width="70"
                         Margin="10,0,0,0"
@@ -133,7 +133,7 @@
                 </DockPanel>
 
                 <StackPanel Orientation="Horizontal">
-                    <Label Content="Source:" />
+                    <Label Content="Codigo:" />
                     <ComboBox
                         x:Name="reloadSourceCombobox"
                         HorizontalAlignment="Left"

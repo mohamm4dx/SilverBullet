@@ -32,7 +32,7 @@
                     <TextBlock Margin="5,0,0,0">Shrink</TextBlock>
                 </DockPanel>
             </Button>
-            <Label Content="Reduces the database filesize by removing unused space. Please backup the database first. This might take some time, do not close OB." />
+            <Label Content="Reduce la BD al eliminando espacio no utilizado. Primero haga una copia de seguridad de la base de datos. Si tarda no cierre OB" />
         </StackPanel>
     </Grid>
 </Page>

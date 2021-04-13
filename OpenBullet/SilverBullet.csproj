@@ -11,8 +11,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{99E40E7F-00A4-4FB1-9441-B05A56C47C08}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>OpenBullet</RootNamespace>
-    <AssemblyName>SilverBullet</AssemblyName>
+    <RootNamespace>OpenBulletSpain</RootNamespace>
+    <AssemblyName>OpenBulletSpain</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,7 +53,7 @@
     </AllowedReferenceRelatedFileExtensions>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Images\SilverBullet Icon.ico</ApplicationIcon>
+    <ApplicationIcon>svbfile2.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject />
@@ -71,7 +71,7 @@
     <OutputPath>bin\x64\Debug\</OutputPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AngleSharp, Version=0.14.0.0, Culture=neutral, PublicKeyToken=e83494dcdc6d31ea, processorArchitecture=MSIL">
@@ -1237,7 +1237,7 @@
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
       <Visible>False</Visible>
-      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
@@ -1300,6 +1300,7 @@
     <None Include="DefaultEnvFile.ini" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="svbfile2.ico" />
     <None Include="SyntaxHelper.xml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
@@ -1317,6 +1318,17 @@
     <Resource Include="Images\Icons\add-128.png" />
     <Resource Include="Images\Icons\add-512.png" />
     <Resource Include="Images\Icons\add-32.png" />
+    <Resource Include="Bullet_Bill_24683.png" />
+    <Resource Include="Bullet_Bill_24683.ico" />
+    <Resource Include="Bullet_Bill_2.jpg" />
+    <Resource Include="Bullet_Bill_3.png" />
+    <Resource Include="Bullet_Bill_48.png" />
+    <Resource Include="favicon.ico" />
+    <Resource Include="Bullet_Billl.ico" />
+    <Resource Include="ico2.png" />
+    <Resource Include="bullet.jpg" />
+    <Resource Include="bullet1.png" />
+    <Resource Include="3423.ico" />
     <Content Include="Images\Icons\export.png" />
     <Resource Include="Images\Icons\load.png" />
     <Resource Include="Images\Icons\new.png" />
@@ -1332,6 +1344,7 @@
     <Resource Include="Images\Icons\filedocmultiple.png" />
     <Resource Include="Images\Icons\sbIcon.png" />
     <Resource Include="Images\SilverBullet Icon.ico" />
+    <Resource Include="logoaw.ico" />
     <Content Include="Sounds\rifle_hit.wav" />
     <Content Include="Sounds\rifle_reload.wav" />
   </ItemGroup>
@@ -1354,97 +1367,8 @@
     <Error Condition="!Exists('..\packages\Selenium.WebDriver.GeckoDriver.Win64.0.27.0\build\Selenium.WebDriver.GeckoDriver.Win64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.GeckoDriver.Win64.0.27.0\build\Selenium.WebDriver.GeckoDriver.Win64.targets'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>if not exist "$(TargetDir)bin" mkdir "$(TargetDir)bin"
-if $(ConfigurationName) == Release move "$(TargetDir)*.dll" "$(TargetDir)bin\"
-if $(ConfigurationName) == Release move "$(TargetDir)*driver.exe" "$(TargetDir)bin\"
-if exist "$(TargetDir)cs-CZ" RD /S /Q "$(TargetDir)cs-CZ"
-if exist "$(TargetDir)de" RD /S /Q "$(TargetDir)de"
-if exist "$(TargetDir)es" RD /S /Q "$(TargetDir)es"
-if exist "$(TargetDir)fr" RD /S /Q "$(TargetDir)fr"
-
-XCOPY "$(TargetDir)ar" "$(TargetDir)bin\ar" /i /e /s /y /f
-XCOPY "$(TargetDir)az" "$(TargetDir)bin\az" /i /e /s /y /f
-XCOPY "$(TargetDir)dg" "$(TargetDir)bin\dg" /i /e /s /y /f
-XCOPY "$(TargetDir)bn-DB" "$(TargetDir)bin\bn-DB" /i /e /s /y /f
-XCOPY "$(TargetDir)cs" "$(TargetDir)bin\cs" /i /e /s /y /f
-XCOPY "$(TargetDir)da" "$(TargetDir)bin\da" /i /e /s /y /f
-XCOPY "$(TargetDir)el" "$(TargetDir)bin\el" /i /e /s /y /f
-XCOPY "$(TargetDir)el" "$(TargetDir)bin\el" /i /e /s /y /f
-XCOPY "$(TargetDir)fa" "$(TargetDir)bin\fa" /i /e /s /y /f
-XCOPY "$(TargetDir)fi-FI" "$(TargetDir)bin\fi-FI" /i /e /s /y /f
-XCOPY "$(TargetDir)fr-BE" "$(TargetDir)bin\fr-BE" /i /e /s /y /f
-XCOPY "$(TargetDir)he" "$(TargetDir)bin\he" /i /e /s /y /f
-XCOPY "$(TargetDir)hr" "$(TargetDir)bin\hr" /i /e /s /y /f
-XCOPY "$(TargetDir)id" "$(TargetDir)bin\ja" /i /e /s /y /f
-XCOPY "$(TargetDir)lv" "$(TargetDir)bin\lv" /i /e /s /y /f
-XCOPY "$(TargetDir)ms-MY" "$(TargetDir)bin\ms-MY" /i /e /s /y /f
-XCOPY "$(TargetDir)mt" "$(TargetDir)bin\mt" /i /e /s /y /f
-XCOPY "$(TargetDir)nb" "$(TargetDir)bin\nb" /i /e /s /y /f
-XCOPY "$(TargetDir)nb-NO" "$(TargetDir)bin\nb-NO" /i /e /s /y /f
-XCOPY "$(TargetDir)nl" "$(TargetDir)bin\nl" /i /e /s /y /f
-XCOPY "$(TargetDir)pl" "$(TargetDir)bin\pl" /i /e /s /y /f
-XCOPY "$(TargetDir)pt" "$(TargetDir)bin\pt" /i /e /s /y /f
-XCOPY "$(TargetDir)sk" "$(TargetDir)bin\sk" /i /e /s /y /f
-XCOPY "$(TargetDir)sl" "$(TargetDir)bin\sl" /i /e /s /y /f
-XCOPY "$(TargetDir)sr" "$(TargetDir)bin\sr" /i /e /s /y /f
-XCOPY "$(TargetDir)sr-Latn" "$(TargetDir)bin\st-Latn" /i /e /s /y /f
-XCOPY "$(TargetDir)tr" "$(TargetDir)bin\tr" /i /e /s /y /f
-XCOPY "$(TargetDir)uk" "$(TargetDir)bin\uk" /i /e /s /y /f
-XCOPY "$(TargetDir)uz-Cyrl-UZ" "$(TargetDir)bin\uz-Cyrl-UZ" /i /e /s /y /f
-XCOPY "$(TargetDir)uz-Latn-UZ" "$(TargetDir)bin\uz-Latn-UZ" /i /e /s /y /f
-XCOPY "$(TargetDir)vi" "$(TargetDir)bin\vi" /i /e /s /y /f
-XCOPY "$(TargetDir)zh-CN" "$(TargetDir)bin\zh-CN" /i /e /s /y /f
-XCOPY "$(TargetDir)zh-Hant" "$(TargetDir)bin\zh-Hant" /i /e /s /y /f
-
-if exist "$(TargetDir)af" RD /S /Q "$(TargetDir)af"
-if exist "$(TargetDir)ar" RD /S /Q "$(TargetDir)ar"
-if exist "$(TargetDir)az" RD /S /Q "$(TargetDir)az"
-if exist "$(TargetDir)bg" RD /S /Q "$(TargetDir)bg"
-if exist "$(TargetDir)bin-DB" RD /S /Q "$(TargetDir)bin-DB"
-if exist "$(TargetDir)cs" RD /S /Q "$(TargetDir)cs"
-if exist "$(TargetDir)da" RD /S /Q "$(TargetDir)da"
-if exist "$(TargetDir)el" RD /S /Q "$(TargetDir)el"
-if exist "$(TargetDir)fa" RD /S /Q "$(TargetDir)fa"
-if exist "$(TargetDir)fi-FI" RD /S /Q "$(TargetDir)fi-FI"
-if exist "$(TargetDir)fr-BE" RD /S /Q "$(TargetDir)fr-BE"
-if exist "$(TargetDir)he" RD /S /Q "$(TargetDir)he"
-if exist "$(TargetDir)hr" RD /S /Q "$(TargetDir)hr"
-if exist "$(TargetDir)id" RD /S /Q "$(TargetDir)id"
-if exist "$(TargetDir)ja" RD /S /Q "$(TargetDir)ja"
-if exist "$(TargetDir)lv" RD /S /Q "$(TargetDir)lv"
-if exist "$(TargetDir)ms-MY" RD /S /Q "$(TargetDir)ms-MY"
-if exist "$(TargetDir)mt" RD /S /Q "$(TargetDir)mt"
-if exist "$(TargetDir)nb" RD /S /Q "$(TargetDir)nb"
-if exist "$(TargetDir)nb-NO" RD /S /Q "$(TargetDir)nb-NO"
-if exist "$(TargetDir)nl" RD /S /Q "$(TargetDir)nl"
-if exist "$(TargetDir)pl" RD /S /Q "$(TargetDir)pl"
-if exist "$(TargetDir)pt" RD /S /Q "$(TargetDir)pt"
-if exist "$(TargetDir)sk" RD /S /Q "$(TargetDir)sk"
-if exist "$(TargetDir)sl" RD /S /Q "$(TargetDir)sl"
-if exist "$(TargetDir)sr" RD /S /Q "$(TargetDir)sr"
-if exist "$(TargetDir)sr-Latn" RD /S /Q "$(TargetDir)sr-Latn"
-if exist "$(TargetDir)tr" RD /S /Q "$(TargetDir)tr"
-if exist "$(TargetDir)uk" RD /S /Q "$(TargetDir)uk"
-if exist "$(TargetDir)uz-Cyrl-UZ" RD /S /Q "$(TargetDir)uz-Cyrl-UZ"
-if exist "$(TargetDir)uz-Latn-UZ" RD /S /Q "$(TargetDir)uz-Latn-UZ"
-if exist "$(TargetDir)vi" RD /S /Q "$(TargetDir)vi"
-
-if exist "$(TargetDir)hu" RD /S /Q "$(TargetDir)hu"
-if exist "$(TargetDir)it" RD /S /Q "$(TargetDir)it"
-if exist "$(TargetDir)pt-BR" RD /S /Q "$(TargetDir)pt-BR"
-if exist "$(TargetDir)ro" RD /S /Q "$(TargetDir)ro"
-if exist "$(TargetDir)ru" RD /S /Q "$(TargetDir)ru"
-if exist "$(TargetDir)sv" RD /S /Q "$(TargetDir)sv"
-if exist "$(TargetDir)zh-Hans" RD /S /Q "$(TargetDir)zh-Hans"
-if not exist "$(TargetDir)Settings" mkdir "$(TargetDir)Settings"
-if not exist "$(TargetDir)Settings\Environment.ini" copy "$(ProjectDir)DefaultEnvFile.ini" "$(TargetDir)Settings\Environment.ini"
-if not exist "$(TargetDir)Sounds" mkdir "$(TargetDir)Sounds"
-copy "$(ProjectDir)Sounds\rifle_hit.wav" "$(TargetDir)Sounds\rifle_hit.wav"
-copy "$(ProjectDir)Sounds\rifle_reload.wav" "$(TargetDir)Sounds\rifle_reload.wav"
-    if not exist "$(TargetDir)x86" md "$(TargetDir)x86"
-    xcopy /s /y "$(SolutionDir)packages\Noesis.Javascript.0.7.1.0\NativeBinaries\net40\x86\*.*" "$(TargetDir)x86"
-    if not exist "$(TargetDir)amd64" md "$(TargetDir)amd64"
-    xcopy /s /y "$(SolutionDir)packages\Noesis.Javascript.0.7.1.0\NativeBinaries\net40\amd64\*.*" "$(TargetDir)amd64"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <Import Project="..\packages\Selenium.Chrome.WebDriver.85.0.0\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.85.0.0\build\Selenium.Chrome.WebDriver.targets')" />
   <Import Project="..\packages\CefSharp.Common.84.4.10\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.84.4.10\build\CefSharp.Common.targets')" />

@@ -21,7 +21,7 @@
                 </Grid.ColumnDefinitions>
                 <Label
                     HorizontalAlignment="Left"
-                    Content="Location:" />
+                    Content="Ubicacion" />
                 <TextBox
                     x:Name="locTextBox"
                     Grid.Column="1"
@@ -29,9 +29,7 @@
                 <Button
                     Grid.Column="2"
                     HorizontalAlignment="Right"
-                    Click="Button_Click">
-                    Load Wordlist
-                </Button>
+                    Click="Button_Click" Content="Carga combo"/>
             </Grid>
             <!--<GroupBox
                 Margin="0,5,5,5"
@@ -67,13 +65,13 @@
             </GroupBox>-->
             <GroupBox
                 HorizontalAlignment="Left"
-                Header="Remove dups">
+                Header="Borrar dups" Height="67" Width="209">
                 <DockPanel>
-                    <Button Click="Button_Click_2">Remove Duplicates</Button>
+                    <Button Click="Button_Click_2" Content="Borrar duplicados"/>
                     <TextBlock
                         Margin="5,0,0,0"
                         VerticalAlignment="Center">
-                        Removed:
+                        Borrados:
                     </TextBlock>
                     <TextBlock
                         x:Name="removedDup"
@@ -100,9 +98,7 @@
                     <Button
                         Grid.Row="0"
                         Width="121"
-                        Click="Button_Click_1">
-                        Split
-                    </Button>
+                        Click="Button_Click_1" Content="Split"/>
 
                     <StackPanel
                         Grid.Row="1"
@@ -111,14 +107,14 @@
                         VerticalAlignment="Center"
                         Orientation="Horizontal">
                         <TextBox
-                            Name="splitTextBox"
+                            x:Name="splitTextBox"
                             Width="45"
                             VerticalAlignment="Center"
                             FontSize="15"
                             Text=":"
                             TextAlignment="Center" />
                         <xctk:IntegerUpDown
-                            Name="splitIndex"
+                            x:Name="splitIndex"
                             Width="45"
                             Height="30"
                             VerticalAlignment="Center"
@@ -133,22 +129,18 @@
                     <DockPanel Grid.Column="1">
                         <TextBlock
                             Margin="5,0,0,0"
-                            VerticalAlignment="Center">
-                            Splited:
-                        </TextBlock>
+                            VerticalAlignment="Center"><Run Text="Splited:"/></TextBlock>
                         <TextBlock
-                            Name="splited"
+                            x:Name="splited"
                             Margin="3,0,0,0"
-                            VerticalAlignment="Center">
-                            0
-                        </TextBlock>
+                            VerticalAlignment="Center"><Run Text="0"/></TextBlock>
                     </DockPanel>
                 </Grid>
             </GroupBox>
             <GroupBox
                 MinWidth="209"
                 HorizontalAlignment="Left"
-                Header="Change Separator">
+                Header="Cambiar Separador" Width="199">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="auto" />
@@ -162,9 +154,7 @@
                     <Button
                         Grid.Row="0"
                         Width="121"
-                        Click="Button_Click_3">
-                        Change
-                    </Button>
+                        Click="Button_Click_3" Content="Cambiar"/>
                     <StackPanel
                         Grid.Row="1"
                         Margin="0,1,0,0"
@@ -191,7 +181,7 @@
                         <TextBlock
                             Margin="5,0,0,0"
                             VerticalAlignment="Center">
-                            Changed:
+                            Cambiado:
                         </TextBlock>
                         <TextBlock
                             Name="changed"
@@ -208,7 +198,7 @@
                 <TextBlock
                     FontSize="13"
                     Foreground="{DynamicResource ForegroundMain}">
-                    Loaded:
+                    Cargado:
                 </TextBlock>
                 <TextBlock
                     x:Name="loaded"

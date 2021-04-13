@@ -44,7 +44,7 @@
                     <TextBlock
                         Margin="5,0"
                         VerticalAlignment="Center">
-                        Search
+                        Buscar
                     </TextBlock>
                 </StackPanel>
             </Button>
@@ -189,35 +189,23 @@
                     <GridViewColumn
                         Width="130"
                         DisplayMemberBinding="{Binding Path=Name}">
-                        <GridViewColumn.Header>
-                            <GridViewColumnHeader
+                        <GridViewColumnHeader
                                 Click="listViewColumnHeader_Click"
-                                Tag="Name">
-                                Name
-                            </GridViewColumnHeader>
-                        </GridViewColumn.Header>
+                                Tag="Name" Content="NOMBRE"/>
                     </GridViewColumn>
                     <GridViewColumn
                         Width="50"
                         DisplayMemberBinding="{Binding Path=Type}">
-                        <GridViewColumn.Header>
-                            <GridViewColumnHeader
+                        <GridViewColumnHeader
                                 Click="listViewColumnHeader_Click"
-                                Tag="Type">
-                                Type
-                            </GridViewColumnHeader>
-                        </GridViewColumn.Header>
+                                Tag="Type" Content="TIPO"/>
                     </GridViewColumn>
                     <GridViewColumn
                         Width="65"
                         DisplayMemberBinding="{Binding Path=Purpose}">
-                        <GridViewColumn.Header>
-                            <GridViewColumnHeader
+                        <GridViewColumnHeader
                                 Click="listViewColumnHeader_Click"
-                                Tag="Purpose">
-                                Purpose
-                            </GridViewColumnHeader>
-                        </GridViewColumn.Header>
+                                Tag="Purpose" Content="OBJETIVO"/>
                     </GridViewColumn>
                     <GridViewColumn
                         Width="60"
@@ -279,13 +267,13 @@
                 <CheckBox
                     x:Name="addToWordlistsCheckBox"
                     Padding="0"
-                    Content="Add To Wordlists"
+                    Content="Agrega combo"
                     IsChecked="True" />
                 <CheckBox
                     x:Name="removeDupCheckBox"
                     Margin="7,0,0,0"
                     Padding="0"
-                    Content="Remove Dup"
+                    Content="Borrar Dup"
                     IsChecked="True" />
             </DockPanel>
             <Button
@@ -293,7 +281,7 @@
                 Grid.Row="3"
                 Grid.ColumnSpan="3"
                 Click="selectButton_Click"
-                Content="Select" />
+                Content="Selecionar" />
         </Grid>
     </Grid>
 </Page>

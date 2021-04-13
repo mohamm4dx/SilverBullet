@@ -19,7 +19,7 @@
 
         <StackPanel Grid.Column="0">
             <DockPanel DockPanel.Dock="Top">
-                <Label Content="Wait Time after bot end (millisec)" />
+                <Label Content="Tiempo de espera despues del bot " />
                 <xctk:IntegerUpDown
                     Width="50"
                     Margin="10,0,0,0"
@@ -29,7 +29,7 @@
                     Value="{Binding WaitTime}" />
             </DockPanel>
             <DockPanel DockPanel.Dock="Top">
-                <Label Content="Requests Timeout (seconds)" />
+                <Label Content="Tiempo de espera de solicitudes " />
                 <xctk:IntegerUpDown
                     Width="50"
                     Margin="10,0,0,0"
@@ -39,7 +39,7 @@
                     Value="{Binding RequestTimeout}" />
             </DockPanel>
             <DockPanel DockPanel.Dock="Top">
-                <Label Content="Max number of Hits (0 = unlimited)" />
+                <Label Content="Numero maximo hits (0=ilimitado)" />
                 <xctk:IntegerUpDown
                     Width="50"
                     Margin="10,0,0,0"
@@ -49,7 +49,7 @@
                     Value="{Binding MaxHits}" />
             </DockPanel>
             <Label
-                Content="Runner Bots Display Mode"
+                Content="Modo de visualización de Runner Bots"
                 DockPanel.Dock="Top" />
             <ComboBox
                 x:Name="botsDisplayModeCombobox"
@@ -58,27 +58,27 @@
             <CheckBox
                 VerticalAlignment="Center"
                 VerticalContentAlignment="Center"
-                Content="Enable Bot Log (slow, RAM-heavy)"
+                Content="Habilitar Bot Log (lento, con mucha RAM)"
                 IsChecked="{Binding EnableBotLog}" />
             <CheckBox
                 VerticalAlignment="Center"
                 VerticalContentAlignment="Center"
-                Content="Save Last Response Source (RAM-heavy)"
+                Content="Guardar la última fuente de respuesta "
                 IsChecked="{Binding SaveLastSource}" />
             <CheckBox
                 VerticalAlignment="Center"
                 VerticalContentAlignment="Center"
-                Content="Send data in process to ToCheck on abort"
+                Content="Enviar datos proceso ToCheck al cancelar"
                 IsChecked="{Binding SendToCheckOnAbort}" />
             <Label
                 Content="Hits Webhook"
                 FontWeight="Bold" />
             <CheckBox
-                Content="Enabled"
+                Content="Activado"
                 IsChecked="{Binding WebhookEnabled}" />
             <Label Content="URL:" />
             <TextBox Text="{Binding WebhookURL}" />
-            <Label Content="Username (will be received by remote API):" />
+            <Label Content="Nombre usuario API Remota" />
             <TextBox Text="{Binding WebhookUser}" />
         </StackPanel>
 
@@ -88,7 +88,7 @@
             <CheckBox
                 Padding="0,5,0,8"
                 VerticalAlignment="Center"
-                Content="Remove Duplicate Wordlist"
+                Content="Eliminar duplicados"
                 IsChecked="{Binding RemoveDuplicateFromWordlist}" />
         </StackPanel>
 

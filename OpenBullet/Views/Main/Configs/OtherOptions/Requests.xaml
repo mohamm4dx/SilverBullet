@@ -16,9 +16,9 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <StackPanel>
-            <CheckBox Content="Ignore Response Errors" IsChecked="{Binding IgnoreResponseErrors}" VerticalContentAlignment="Center"/>
+            <CheckBox Content="Ignorar errores de respuesta" IsChecked="{Binding IgnoreResponseErrors}" VerticalContentAlignment="Center"/>
             <DockPanel Grid.Column="0" DockPanel.Dock="Top">
-                <Label Content="Maximum Redirects" />
+                <Label Content="Redirecciones maximas" />
                 <xctk:IntegerUpDown Background="Transparent" Width="50" Minimum="0" Maximum="100" Margin="10 0 0 0" Value="{Binding MaxRedirects}" Foreground="{DynamicResource ForegroundMain}"  HorizontalAlignment="Right"/>
             </DockPanel>
         </StackPanel>

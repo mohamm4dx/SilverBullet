@@ -37,8 +37,8 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="10" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="0" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -53,7 +53,7 @@
             x:Name="titleBar"
             Grid.Row="0"
             Grid.Column="0"
-            Grid.ColumnSpan="3"
+            Grid.ColumnSpan="2"
             Background="{DynamicResource BackgroundSecondary}"
             MouseDown="titleBar_MouseDown"
             WindowChrome.IsHitTestVisibleInChrome="True">
@@ -67,26 +67,41 @@
                 Grid.Column="0"
                 Orientation="Horizontal">
                 <Image
-                    Width="35"
-                    Height="31"
-                    Margin="-2,0,0,1"
-                    VerticalAlignment="Center"
-                    Source="Images/Icons/sbicon.png"
+                    Width="16"
+                    Height="28"
+                    Margin="-2,0,0,0"
+                    VerticalAlignment="Bottom"
+                    Source="3423.ico"
                     Stretch="Fill" />
                 <Label
                     x:Name="titleLabel"
-                    Margin="-7,0,0,0"
-                    Content="Silver Bullet"
+                    Margin="-7,2,0,2"
+                    Content="   🅾🅿🅴🅽 🅱🆄🅻🅻🅴🆃"
                     FontFamily="pack://application:,,,/Fonts/#Century Gothic"
                     FontSize="14"
-                    WindowChrome.IsHitTestVisibleInChrome="False" />
+                    WindowChrome.IsHitTestVisibleInChrome="False" Width="186" />
             </StackPanel>
 
             <Grid
                 x:Name="dragPanel"
                 Grid.Column="1"
                 Background="{DynamicResource BackgroundSecondary}"
-                MouseDown="dragPanel_MouseDown" />
+                MouseDown="dragPanel_MouseDown" >
+                <Label
+                    x:Name="titleLabel_Copy"
+                    Margin="434,0,-42,4"
+                    Content="🅱🆈_🅶3🆅3🆁"
+                    FontFamily="pack://application:,,,/Fonts/#Century Gothic"
+                    FontSize="14"
+                    WindowChrome.IsHitTestVisibleInChrome="False" />
+                <Label
+                    x:Name="titleLabel_Copy1"
+                    Margin="145,0,227,4"
+                    Content="🆅🅴🆁🆂🅸🅾🅽 🆂🅿🅰🅸🅽"
+                    FontFamily="pack://application:,,,/Fonts/#Century Gothic"
+                    FontSize="14"
+                    WindowChrome.IsHitTestVisibleInChrome="False" />
+            </Grid>
 
             <StackPanel
                 Grid.Column="2"
@@ -135,7 +150,7 @@
                     Click="maximizeButton_Click"
                     MouseEnter="maximizeButton_MouseEnter"
                     MouseLeave="maximizeButton_MouseLeave"
-                    ToolTip="Maximize">
+                    ToolTip="Maximize" Margin="0,0,0,-2" VerticalAlignment="Top">
                     <Grid>
                         <iconPacks:PackIconFontAwesome
                             x:Name="maximizeImage"
@@ -179,7 +194,7 @@
         <!--  Top Menu StackPanel  -->
         <Grid
             Grid.Row="1"
-            Grid.Column="1">
+            Grid.Column="1" HorizontalAlignment="Left" Width="860">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="auto" />
@@ -219,15 +234,7 @@
                     Click="menuOptionRunner_Click"
                     Foreground="{DynamicResource ForegroundMain}">
                     <DockPanel Margin="0,-3,0,0">
-                        <Path
-                            Width="16"
-                            Height="18.5"
-                            Margin="0,1,1,0"
-                            VerticalAlignment="Center"
-                            Data="M12,15C7.58,15 4,16.79 4,19V21H20V19C20,16.79 16.42,15 12,15M8,9A4,4 0 0,0 12,13A4,4 0 0,0 16,9M11.5,2C11.2,2 11,2.21 11,2.5V5.5H10V3C10,3 7.75,3.86 7.75,6.75C7.75,6.75 7,6.89 7,8H17C16.95,6.89 16.25,6.75 16.25,6.75C16.25,3.86 14,3 14,3V5.5H13V2.5C13,2.21 12.81,2 12.5,2H11.5Z"
-                            Fill="{Binding ElementName=menuOptionRunner, Path=Foreground}"
-                            Stretch="Fill" />
-                        <TextBlock Margin="2,3,0,0">Runner</TextBlock>
+                        <TextBlock Margin="2,3,0,0">Inicio</TextBlock>
                     </DockPanel>
                 </Button>
                 <Button
@@ -235,9 +242,6 @@
                     Click="menuOptionProxyManager_Click"
                     Foreground="{DynamicResource ForegroundMain}">
                     <DockPanel Margin="0,0,0,1">
-                        <iconPacks:PackIconFontAwesome
-                            Margin="0,1,0,0"
-                            Kind="ServerSolid" />
                         <TextBlock Margin="4,1,0,0">Proxies</TextBlock>
                     </DockPanel>
                 </Button>
@@ -245,15 +249,13 @@
                     x:Name="menuOptionWordlistManager"
                     Click="menuOptionWordlistManager_Click">
                     <DockPanel>
-                        <iconPacks:PackIconFontAwesome Kind="CopySolid" />
-                        <TextBlock Margin="3,0,0,0">Wordlists</TextBlock>
+                        <TextBlock Margin="3,0,0,0">Combos</TextBlock>
                     </DockPanel>
                 </Button>
                 <Button
                     x:Name="menuOptionConfigCreator"
                     Click="menuOptionConfigCreator_Click">
                     <DockPanel>
-                        <iconPacks:PackIconIonicons Kind="CogMD" />
                         <TextBlock Margin="3,0,0,0">Configs</TextBlock>
                     </DockPanel>
                 </Button>
@@ -261,7 +263,6 @@
                     x:Name="menuOptionHitsDatabase"
                     Click="menuOptionHitsDatabase_Click">
                     <DockPanel>
-                        <iconPacks:PackIconFontAwesome Kind="DatabaseSolid" />
                         <TextBlock Margin="3,0,0,0">Hits DB</TextBlock>
                     </DockPanel>
                 </Button>
@@ -269,16 +270,14 @@
                     x:Name="menuOptionTools"
                     Click="menuOptionTools_Click">
                     <DockPanel>
-                        <iconPacks:PackIconFontAwesome Kind="ToolsSolid" />
-                        <TextBlock Margin="4,0,0,0">Tools</TextBlock>
+                        <TextBlock Margin="4,0,0,0">Herramienta</TextBlock>
                     </DockPanel>
                 </Button>
                 <Button
                     x:Name="menuOptionPlugins"
                     Click="menuOptionPlugins_Click">
                     <DockPanel>
-                        <iconPacks:PackIconFontAwesome Kind="PlugSolid" />
-                        <TextBlock Margin="2,0,0,0">Plugins</TextBlock>
+                        <TextBlock Margin="2,0,0,0">Complemento</TextBlock>
                     </DockPanel>
                 </Button>
                 <Button
@@ -286,7 +285,7 @@
                     Click="menuOptionSettings_Click">
                     <DockPanel>
                         <iconPacks:PackIconMaterial Kind="Cog" />
-                        <TextBlock Margin="3,0,0,0">Settings</TextBlock>
+                        <TextBlock Margin="3,0,0,0">Ajustes</TextBlock>
                     </DockPanel>
                 </Button>
                 <Button
@@ -294,50 +293,25 @@
                     Click="menuOptionAbout_Click">
                     <DockPanel>
                         <iconPacks:PackIconMaterial Kind="HelpCircleOutline" />
-                        <TextBlock Margin="3,0,0,0">Help</TextBlock>
+                        <TextBlock Margin="3,0,0,0">Info</TextBlock>
                     </DockPanel>
                 </Button>
                 <Button
                     x:Name="menuOptionSupport"
                     Margin="0,0,0,0"
                     Click="menuOptionSupport_Click">
-                    <DockPanel Margin="-4,0,0,0">
-                        <iconPacks:PackIconFontAwesome Kind="EllipsisVSolid" />
-                        <TextBlock Margin="0,0,0,0">Supporters</TextBlock>
-                    </DockPanel>
+                    <DockPanel Margin="-4,0,0,0"/>
                 </Button>
             </StackPanel>
 
             <Grid
                 Grid.Column="1"
-                Width="23"
-                Background="{DynamicResource BackgroundMain}"
-                MouseDown="logImage_MouseDown"
-                ToolTip="Open the Log">
-                <iconPacks:PackIconMaterial
-                    Width="22"
-                    Height="20"
-                    VerticalAlignment="Center"
-                    Foreground="{DynamicResource ForegroundMain}"
-                    Kind="History" />
-            </Grid>
-
-            <Grid
-                Grid.Column="2"
                 Width="22"
-                Margin="3,0,0,0"
+                Margin="16,5,10,5"
                 VerticalAlignment="Center"
                 Background="{DynamicResource BackgroundMain}"
                 MouseDown="screenshotImage_MouseDown"
-                ToolTip="Take a Screenshot">
-                <iconPacks:PackIconMaterial
-                    Width="20"
-                    Height="20"
-                    VerticalAlignment="Center"
-                    Background="{DynamicResource BackgroundMain}"
-                    Foreground="{DynamicResource ForegroundMain}"
-                    Kind="Camera" />
-            </Grid>
+                ToolTip="Take a Screenshot" Grid.ColumnSpan="2"/>
 
             <!--<Grid
                 Grid.Column="3"
@@ -360,14 +334,7 @@
                 VerticalAlignment="Center"
                 Background="{DynamicResource BackgroundMain}"
                 MouseDown="IconDiscord_MouseDown"
-                ToolTip="Join to discord">
-                <iconPacks:PackIconMaterial
-                    Width="20"
-                    Height="22"
-                    Background="{DynamicResource BackgroundMain}"
-                    Foreground="{DynamicResource ForegroundMain}"
-                    Kind="Discord" />
-            </Grid>
+                ToolTip="Join to discord"/>
             <Grid
                 Grid.Column="5"
                 Width="20"
@@ -375,14 +342,7 @@
                 VerticalAlignment="Center"
                 Background="{DynamicResource BackgroundMain}"
                 MouseDown="IconTelegram_MouseDown"
-                ToolTip="Join to telegram channel">
-                <iconPacks:PackIconFontAwesome
-                    Width="20"
-                    Height="22"
-                    Background="{DynamicResource BackgroundMain}"
-                    Foreground="{DynamicResource ForegroundMain}"
-                    Kind="TelegramBrands" />
-            </Grid>
+                ToolTip="Join to telegram channel"/>
 
         </Grid>
 
@@ -390,7 +350,7 @@
             x:Name="Main"
             Grid.Row="2"
             Grid.Column="1"
-            NavigationUIVisibility="Hidden">
+            NavigationUIVisibility="Hidden" Margin="0,10,13,0" Navigated="Main_Navigated">
             <!-- <Frame.Background>
                 <ImageBrush ImageSource="/Images/Hall/hall8trans2.png" AlignmentX="Center" AlignmentY="Center"/>
             </Frame.Background>-->
@@ -398,17 +358,15 @@
 
         <Image
             x:Name="gripImage"
-            Grid.Row="3"
-            Grid.Column="2"
-            Width="10"
-            Height="10"
-            Margin="-5,-5,0,0"
+            Grid.Row="2"
+            Grid.Column="1"
+            Margin="862,548,-2,2"
             Cursor="SizeNWSE"
             PreviewMouseLeftButtonDown="gripImage_PreviewMouseLeftButtonDown"
             PreviewMouseLeftButtonUp="gripImage_PreviewMouseLeftButtonUp"
             PreviewMouseMove="gripImage_PreviewMouseMove"
             RenderOptions.BitmapScalingMode="HighQuality"
-            Source="/Images/Icons/grip.png" />
+            Source="/Images/Icons/grip.png" Grid.ColumnSpan="2" Grid.RowSpan="2" />
 
     </Grid>
 </Window>
